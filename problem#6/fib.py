@@ -5,7 +5,12 @@ def fibonacci(n):
 
     if(n < 0):
         return -1
-    print()
+
+    for i in range (1,n):
+        c = a + b
+        a = b
+        b = c
+    return c
 
 
 if __name__ == '__main__':
